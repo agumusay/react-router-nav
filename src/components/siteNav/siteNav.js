@@ -13,7 +13,7 @@ const SiteNav = (props) => {
       </button>
       <ul>
         <li>
-          <NavLink to="/" onClick={clickHandler}>
+          <NavLink exact to="/" onClick={clickHandler}>
             Home
           </NavLink>
         </li>
