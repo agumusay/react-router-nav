@@ -15,9 +15,6 @@ function App() {
     setOpen(!open);
   };
 
-  const closeMenu = () => {
-    setOpen(false);
-  };
   return (
     <div className="App">
       <Helmet>
@@ -48,7 +45,7 @@ function App() {
             </Switch>
           </main>
         ) : (
-          <SiteNav parentFunc={closeMenu} />
+          <SiteNav parentFunc={clickHandler} />
         )}
       </Router>
     </div>
