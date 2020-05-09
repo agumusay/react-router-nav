@@ -3,27 +3,24 @@ import { NavLink } from 'react-router-dom';
 
 import './siteNav.scss';
 const SiteNav = (props) => {
-  const clickHandler = () => {
-    props.parentFunc();
-  };
   return (
     <nav className="site-nav">
-      <button type="button" className="close" onClick={clickHandler}>
+      <button type="button" className="close" onClick={props.parentFunc}>
         ×
       </button>
       <ul>
         <li>
-          <NavLink exact to="/" onClick={clickHandler}>
+          <NavLink exact to="/" onClick={props.parentFunc}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" onClick={clickHandler}>
+          <NavLink to="/about" onClick={props.parentFunc}>
             About
           </NavLink>
         </li>
         <li>
-          <NavLink to="/projects" onClick={clickHandler}>
+          <NavLink to="/projects" onClick={props.parentFunc}>
             Projects
           </NavLink>
         </li>

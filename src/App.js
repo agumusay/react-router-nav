@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import './App.scss';
 import SiteNav from './components/siteNav/siteNav';
 import Logo from './assets/images/logo.svg';
@@ -17,10 +16,6 @@ function App() {
 
   return (
     <div className="App">
-      <Helmet>
-        <title>Home</title>
-        <meta name="decriptipon" content="home" />
-      </Helmet>
       <Router>
         {!open ? (
           <main>
